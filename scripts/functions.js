@@ -1,8 +1,9 @@
 $(document).ready(function(){
 
   var jumboHeight = $('#jumboContainer').outerHeight();
+  var open = true;
 
-  //controls jumbo slide
+/*  //controls jumbo slide
   function parallax(){
       var scrolled = $(window).scrollTop();
 
@@ -20,7 +21,7 @@ $(document).ready(function(){
     }
 
   });
-
+*/
 
 function generateWorkExperienceMediaObject(imageURL, title, time, skills){
 
@@ -116,6 +117,19 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
 
         $('.skillsContainer').append(media);
       });
+    }
+  });
+
+ //smooth scrolling to element
+  $('a[href*=#]:not([href=#])').click(function() {
+    var target = $( $(this).attr('href') );
+    open = !open;
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top - ($('nav').height() + 10)
+        }, 1000);
     }
   });
 
