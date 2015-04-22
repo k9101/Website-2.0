@@ -1,0 +1,60 @@
+{
+  "skills" : [
+    {
+      "skill": "C++",
+      "points": [
+        "Object Oriented Programming",
+        "Design Patterns: Singleton, Factory Method, Observer etc.",
+        "Abstract Classes"
+      ],
+      "img" : ""
+    },
+    {
+      "skill": "C#",
+      "points": [
+        "Model View Controller(MVC) Application Design",
+        "Integration with web services and databases",
+        "Asynchronous design pattern",
+        "Real time web communications",
+        "Unit testing"
+      ],
+      "img" : ""
+    },
+    {
+      "skill": "Java",
+      "points": [
+        "Graphical UIs using Swing and AWT",
+        "File I/O",
+        "Encryption algorithmns"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "HTML/CSS",
+      "points": [
+        "Experience building web applications and websites",
+        "Responsive design (try resizing your browser)",
+        "UI/UX design"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "jQuery",
+      "points": [
+        "Using AJAX to build dynamic UI's",
+        "Integration with web APIs and servers",
+        "Parsing JSON data"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "C",
+      "points": [
+        "Working with pointers, passing by reference",
+        "User interaction",
+        "Imperative Programming"
+      ],
+      "img": ""
+    }
+  ]
+}

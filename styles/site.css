@@ -1,0 +1,478 @@
+/*Css resets*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+a, a:hover, a:visited, a:link, a:active, nav ul li a
+{
+    text-decoration: none;
+}
+
+body{
+  font-family: "Avenir Next", Helvetica, sans-serif;
+  background-color: #ededed;
+}
+
+html, body{
+	height: 100%;
+	min-height: 100%;
+}
+
+.flex{
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+}
+
+/*Navigation Styles*/
+
+nav{
+  height: 55px;
+  background-color: rgba(204, 204, 204, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+	z-index: 1;
+
+	margin-bottom: 15px;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+}
+
+nav ul{
+  list-style-type: none;
+  display: inline;
+}
+
+nav ul li{
+  display: inline;
+}
+
+nav ul li:hover{
+  border-bottom: 1px solid #
+}
+
+nav ul li a{
+  color: #333;
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+#logo{
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.navLink:hover{
+  background-color: #333;
+  border-bottom: 3px solid #1465A7;
+  padding: 17px 0 13px;
+}
+
+.navLink a:hover,
+.navLink:hover a{
+  color: #CCC;
+}
+
+#socialContainer{
+  margin-right: 30px;
+  margin-left: auto;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+
+  align-items: center;
+}
+
+#linkedIn{
+	margin-top: -4px;
+}
+
+.socialLink{
+  height: 30px;
+  width: 30px;
+  padding: 2px 5px;
+}
+
+.socialLink:hover{
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+
+}
+
+#jumboContainer{
+	position: relative;
+	height: 100%;
+}
+
+#jumbo{
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+
+  align-items: center;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+}
+
+.jumbo-text{
+	color: #fff;
+	line-height: 1.5em;
+	font-size: 5em;
+}
+
+.jumbo-text-small{
+	color: #fff;
+	font-size: 4em;
+	letter-spacing: 8px;
+	font-weight: lighter;
+}
+
+#down-arrow{
+	height: 100px;
+	width: 100px;
+
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -50px;
+}
+
+#contentContainer{
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  height: auto;
+	text-align: center;
+  margin-top: 55px;
+	margin-bottom: 15px;
+  padding: 20px 75px;
+}
+
+.contentHeader{
+	font-size: 1.3em;
+}
+
+.sectionHeader{
+	color: #333;
+	text-align: center;
+	font-size: 2.5em;
+	margin-top: 50px;
+}
+
+.sectionSubHeader{
+	color: #333;
+	text-align: center;
+	font-size: 1.3em;
+}
+
+
+/* Work Experience Media object */
+
+.workMedia{
+
+	background: #fff;
+	width: 80%;
+	margin: 20px auto;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+
+	padding: 20px 75px;
+}
+
+.workMediaImage{
+	margin-right: 1em;
+	height: auto;
+	width: 250px;
+	text-align: center;
+	/*position: relative;*/
+}
+
+.workMediaImage img{
+	max-width: 250px;
+	max-height: 100px;
+	/*position: absolute;
+	top: 50%;
+	margin-top: -50px;*/
+	padding: 5px;
+}
+
+.workMediaContent{
+	-webkit-flex: 1; /* Safari 6.1+ */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+	padding: 10px;
+}
+
+.workMediaHeader{
+	font-size: 1.1em;
+	font-weight: 500;
+}
+
+.workMediaHeader span{
+	font-size: 0.8em;
+	font-weight: lighter;
+	margin-left: 10px;
+
+	float: right;
+	vertical-align: middle;
+}
+
+.workMediaList ul{
+	margin-top: 5px;
+}
+
+.workMediaList ul li{
+	margin: 8px 0;
+}
+
+.workMedia-small{
+	-ms-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+
+	width: 30%;
+
+	padding: 20px 50px;
+}
+
+.workMediaImage-small{
+	margin: 0 auto;
+	position: initial;
+}
+
+.workMediaImage-small img{
+	position: initial;
+	margin-top: 0;
+}
+
+.skillsContainer{
+
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+
+}
+
+footer{
+
+	width: 100%;
+	height: 35px;
+	position: relative;
+	bottom: 0;
+	left: 0;
+  background-color: rgba(204, 204, 204, 0.9);
+	font-size: 0.8em;
+	padding: 10px 0;
+
+	-ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+
+	align-items: center;
+
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+@media (max-width: 900px){
+	.workMediaHeader span{
+		float: none;
+	}
+}
+
+
+/*Tablet styles*/
+@media (max-width: 750px){
+
+  nav{
+    height: 35px;
+  }
+
+  .socialLink{
+    height: 20px;
+    width: 20px;
+  }
+
+  nav ul li a{
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  .navLink:hover{
+    padding: 17px 0 6px;
+    border-bottom: none;
+  }
+
+  #logo{
+    margin-left: 0;
+  }
+
+  #socialContainer{
+    margin-right: 0;
+  }
+
+	.jumbo-text{
+		font-size: 4em;
+	}
+
+	.jumbo-text-small{
+		font-size: 3em;
+	}
+
+	#contentContainer{
+		width: auto;
+		padding: 20px 50px;
+	}
+
+	.workMedia{
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+
+		padding: 20px 50px;
+	}
+
+	.workMediaImage{
+		margin: 0 auto;
+		position: initial;
+	}
+
+	.workMediaImage img{
+		position: initial;
+		margin-top: 0;
+	}
+
+	.skillsContainer{
+		-ms-flex-direction: column;
+		-webkit-flex-direction: column;
+		flex-direction: column;
+	}
+
+	.workMedia-small{
+		width: 80%;
+	}
+}
+
+/*smartphone styles*/
+@media (max-width: 540px){
+
+  nav{
+		-ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    height: 70px;
+  }
+
+  #socialContainer{
+    margin-left: 0;
+  }
+
+  #mainNav,
+  #socialContainer{
+    margin: 10px 0;
+  }
+
+  .socialLink{
+    padding: 2px 14px;
+  }
+
+  #contentContainer{
+    margin-top:40px;
+		padding: 20px 35px;
+  }
+
+	.jumbo-text{
+		font-size: 3em;
+	}
+
+	.jumbo-text-small{
+		font-size: 2em;
+	}
+
+	.workMedia{
+		padding: 20px 30px;
+	}
+
+}
