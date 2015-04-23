@@ -3,25 +3,27 @@ $(document).ready(function(){
   var jumboHeight = $('#jumboContainer').outerHeight();
   var open = true;
 
-/*  //controls jumbo slide
-  function parallax(){
-      var scrolled = $(window).scrollTop();
+//calculate degree progress - 15 terms in total
+function degreeProgress(){
+//  var width = 100/15 * numberOfTerms + "%";
+  var date = new Date();
+  var yearSinceStart = date.getFullYear() - 2014; //get full years
+  var month = date.getMonth() + 1;
 
-      if(jumboHeight - scrolled > 0){
-        $('#jumboContainer').css('height', (jumboHeight-scrolled) + 'px');
-      }
-  }
+  var numberOfTerms = 3 * yearSinceStart + month/4 + 1; // account for Fall 2013 
+  var width = 100/15 * numberOfTerms + "%";
 
-  $(window).scroll(function(){
+  console.log(yearSinceStart);
+  console.log(month);
+  console.log(numberOfTerms);
+  console.log(width);
 
-    var atBottom = $(window).scrollTop() + $(window).height() >= ($(document).height() - 20);
+  $('#bar').animate({
+    width: width
+  }, 4000);
 
-    if(!atBottom && $("body").height() >= $(window).height()){
-      parallax();
-    }
-
-  });
-*/
+//  $('#bar').css('width', 100/15 * numberOfTerms + "%");
+}
 
 function generateWorkExperienceMediaObject(imageURL, title, time, skills){
 
@@ -133,4 +135,17 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
     }
   });
 
+//animate the scroll bar, when it is visible
+  $(window).scroll(function(){
+
+    var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
+    var barPercent = ($('#bar').offset().top/$(document).height()) * 100;
+    var difference = barPercent - scrollPercent;
+
+    if(difference < 28){//run once
+      degreeProgress();
+
+      $(window).unbind('scroll');
+    }
+  });
 });
