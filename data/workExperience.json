@@ -9,7 +9,8 @@
       "Built a new Internal IT Ticketing Application to be used across Canada",
       "Created a new database to house application data",
       "Worked with business leaders to ensure application would exceed expectations"
-    ]
+    ],
+    "id": "Crawford"
   },
   {
     "title": "Administrative Assistant",
@@ -20,7 +21,9 @@
       "Filed tax receipts for donors",
       "Ensured proper inventory after all events",
       "Attended events to accept donations and raised community awareness"
-    ]},
+    ],
+    "id": "CCS"
+    },
   {
     "title": "Crew Trainer",
     "time": "June 2011 - Present",
@@ -29,6 +32,7 @@
       "Trained new employees to ensure understanding of safety and quality standards",
       "Regularly responsible for opening the restaurant",
       "Lead managerial and production staff in successful launch of the McLobster"
-    ]
+    ],
+    "id": "McDonalds"
       }]
 }

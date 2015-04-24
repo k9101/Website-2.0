@@ -8,15 +8,10 @@ function degreeProgress(){
 //  var width = 100/15 * numberOfTerms + "%";
   var date = new Date();
   var yearSinceStart = date.getFullYear() - 2014; //get full years
-  var month = date.getMonth() + 1;
+  var month = date.getMonth();
 
-  var numberOfTerms = 3 * yearSinceStart + month/4 + 1; // account for Fall 2013 
+  var numberOfTerms = 3 * yearSinceStart + month/4 + 1; // account for Fall 2013
   var width = 100/15 * numberOfTerms + "%";
-
-  console.log(yearSinceStart);
-  console.log(month);
-  console.log(numberOfTerms);
-  console.log(width);
 
   $('#bar').animate({
     width: width
@@ -25,7 +20,7 @@ function degreeProgress(){
 //  $('#bar').css('width', 100/15 * numberOfTerms + "%");
 }
 
-function generateWorkExperienceMediaObject(imageURL, title, time, skills){
+function generateWorkExperienceMediaObject(imageURL, title, time, skills, id){
 
   var skillsList = "";
 
@@ -33,7 +28,7 @@ function generateWorkExperienceMediaObject(imageURL, title, time, skills){
     skillsList += "<li>" + value + "</li>";
   });
 
-  var media = "<div class='workMedia flex'>" +
+  var media = "<div id='" + id + "' class='workMedia flex'>" +
                 "<div class='workMediaImage'>" +
                   "<img src='" + imageURL + "'/>" +
                 "</div>" +
@@ -82,7 +77,7 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
   //    var jData = JSON.parse(data);
 
       $.each(data.WorkExperience, function(index, value){
-        var media = generateWorkExperienceMediaObject(value.logo, value.title, value.time, value.skills);
+        var media = generateWorkExperienceMediaObject(value.logo, value.title, value.time, value.skills, value.id);
 
         $('.experienceContainer').append(media);
       });
@@ -101,7 +96,7 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
 
       $.each(data.Education, function(index, value){
 
-        var media = generateWorkExperienceMediaObject(value.logo, value.program, value.time, value.notes);
+        var media = generateWorkExperienceMediaObject(value.logo, value.program, value.time, value.notes, "");
 
         $('.educationContainer').append(media);
       });
@@ -122,18 +117,18 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
     }
   });
 
- //smooth scrolling to element
-  $('a[href*=#]:not([href=#])').click(function() {
-    var target = $( $(this).attr('href') );
-    open = !open;
+  //smooth scrolling to element
+   $('a[href*=#]:not([href=#])').click(function() {
+     var target = $( $(this).attr('href') );
+     open = !open;
 
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top - ($('nav').height() + 10)
-        }, 1000);
-    }
-  });
+     if( target.length ) {
+         event.preventDefault();
+         $('html, body').animate({
+             scrollTop: target.offset().top - ($('nav').height() + 10)
+         }, 1000);
+     }
+   });
 
 //animate the scroll bar, when it is visible
   $(window).scroll(function(){

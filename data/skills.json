@@ -55,6 +55,16 @@
         "Imperative Programming"
       ],
       "img": ""
+    },
+    {
+      "skill": "PHP",
+      "points": [
+        "Generating and Sending Emails",
+        "Authenticating User Input",
+        "Processing Form Data",
+        "Dynamically Inserting HTML"
+      ],
+      "img": ""
     }
   ]
 }

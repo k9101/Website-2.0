@@ -414,6 +414,30 @@ footer{
 	justify-content: center;
 }
 
+#map-canvas{
+	height: 350px;
+	margin-top: 15px;
+
+}
+
+.mapContent{
+	font-family: "Avenir Next", Helvetica, sans-serif;
+	color: #000;
+	font-weight: 400;
+}
+
+.firstHeading{
+	font-size:1.5em;
+	font-weight: bold;
+}
+
+.term a,
+.term a:visited,
+.term a:link,
+.term a:active{
+	color: #fff;
+}
+
 @media (max-width: 900px){
 	.workMediaHeader span{
 		float: none;
@@ -540,6 +564,10 @@ footer{
 
 	.workMedia{
 		padding: 20px 30px;
+	}
+
+	.term{
+		display: none;
 	}
 
 }
