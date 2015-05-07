@@ -604,3 +604,9 @@ footer{
 	}
 
 }
+
+@media (max-width: 500px){
+	nav ul li a{
+		padding: 0 5px;
+	}
+}
