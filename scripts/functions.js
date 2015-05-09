@@ -1,16 +1,21 @@
 $(document).ready(function(){
 
   var jumboHeight = $('#jumboContainer').outerHeight();
-  var open = true;
+
+function daysInMonth(month,year) {
+    return new Date(year, month, 0).getDate();
+}
+
 
 //calculate degree progress - 15 terms in total
 function degreeProgress(){
 //  var width = 100/15 * numberOfTerms + "%";
   var date = new Date();
   var yearSinceStart = date.getFullYear() - 2014; //get full years
-  var month = date.getMonth();
-
-  var numberOfTerms = 3 * yearSinceStart + month/4 + 1; // account for Fall 2013
+  var month = date.getMonth() + 1;
+  var days = date.getDate();
+  var daysPercent = days/daysInMonth(month, date.getFullYear());
+  var numberOfTerms = 3 * yearSinceStart + (month + daysPercent)/4 + 1; // account for Fall 2013
   var width = 100/15 * numberOfTerms + "%";
 
   $('#bar').animate({
@@ -120,7 +125,6 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
   //smooth scrolling to element
    $('a[href*=#]:not([href=#])').click(function() {
      var target = $( $(this).attr('href') );
-     open = !open;
 
      if( target.length ) {
          event.preventDefault();

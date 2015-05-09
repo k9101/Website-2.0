@@ -3,7 +3,7 @@
 //Load map, center on location
 function initialize() {
 
-  var latLng = new google.maps.LatLng(43.476128,  -80.481645);
+  var latLng = new google.maps.LatLng(43.472286, -80.544858);
 
   var mapOptions = {
     center: latLng,
@@ -17,7 +17,7 @@ function initialize() {
         '</div>'+
         '<h1 id="firstHeading" class="firstHeading"><b>Where is Kris?</b></h1>'+
         '<div id="bodyContent">'+
-          "<p>Kris is currently completing is first work term at Crawford & Company in Kitchener, ON as a software developer</br><a href='#Crawford'>See More</a></p>" +
+          "</br><p>Kris is currently completing his 2B term for his BBA/BCS Double Degree</br><!--<a href='#Crawford'>See More</a>--></p>" +
         '</div>'+
         '</div>';
 
