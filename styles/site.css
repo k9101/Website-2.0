@@ -157,6 +157,11 @@ nav ul li a{
 
 }
 
+#co-op-heading{
+	font-weight: 500;
+	font-size: 1.1em;
+}
+
 #jumboContainer{
 	position: relative;
 	height: 100%;
@@ -183,6 +188,12 @@ nav ul li a{
 	-ms-flex-direction: column;
 	flex-direction: column;
 
+}
+
+.dropshadow {
+    transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition-delay: 0.2s;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
 .jumbo-text{

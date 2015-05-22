@@ -33,7 +33,7 @@ function generateWorkExperienceMediaObject(imageURL, title, time, skills, id){
     skillsList += "<li>" + value + "</li>";
   });
 
-  var media = "<div id='" + id + "' class='workMedia flex'>" +
+  var media = "<div id='" + id + "' class='workMedia dropshadow flex'>" +
                 "<div class='workMediaImage'>" +
                   "<img src='" + imageURL + "'/>" +
                 "</div>" +
@@ -56,7 +56,7 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
     skillsList += "<li>" + value + "</li>";
   });
 
-  var media = "<div class='workMedia flex workMedia-small'>" +
+  var media = "<div class='workMedia flex dropshadow workMedia-small'>" +
                 "<div class='workMediaImage workMediaImage-small'>" +
                   "<img src='" + imageURL + "'/>" +
                 "</div>" +
@@ -70,8 +70,6 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
 
   return media;
 }
-
-
 
 //populate work experience media objects
   $.ajax({

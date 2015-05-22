@@ -5,7 +5,8 @@
       "points": [
         "Object Oriented Programming",
         "Design Patterns: Singleton, Factory Method, Observer etc.",
-        "Abstract Classes"
+        "Abstract Classes",
+        "Bitwise Operations"
       ],
       "img" : ""
     },
@@ -19,6 +20,26 @@
         "Unit testing"
       ],
       "img" : ""
+    },
+    {
+      "skill": "Android Development",
+      "points": [
+        "Http Requests",
+        "Launching Local Notifications",
+        "Interpreting GPS Location"
+      ],
+      "img": ""
+    },
+
+    {
+      "skill": "AngularJS",
+      "points": [
+        "Integration with external web APIs",
+        "Building custom directives",
+        "Efficient workflow with Yeoman, Bower, and Grunt/Gulp",
+        "<a href='https://www.student.cs.uwaterloo.ca/~kgpenney/moltin-test/'>Tech Store Demo</a>"
+      ],
+      "img": ""
     },
     {
       "skill": "Java",
@@ -63,6 +84,15 @@
         "Authenticating User Input",
         "Processing Form Data",
         "Dynamically Inserting HTML"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "Python",
+      "points": [
+        "File Manipulation",
+        "Responding to HTTP Requests",
+        "Formatting JSON Data"
       ],
       "img": ""
     }
