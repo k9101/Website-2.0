@@ -1,0 +1,156 @@
+{
+  "Education" : [
+    {
+      "logo" : "images/uwaterloo.png",
+      "school": "University of Waterloo",
+      "program": "Bachelor of Computer Science",
+      "time": "Sept 2013 - Present",
+      "notes": [
+        "Expected Graduation: August 2018"
+      ]
+    },
+    {
+      "logo": "images/laurier.png",
+      "school": "Wilfrid Laurier University",
+      "program": "Bachelor of Business Administration",
+      "time": "Sept 2013 - Present",
+      "notes": [
+        "Expected Graduation: August 2018"
+      ]
+    }
+  ],
+  "skills" : [
+    {
+      "skill": "C++",
+      "points": [
+        "Object Oriented Programming",
+        "Design Patterns: Singleton, Factory Method, Observer etc.",
+        "Abstract Classes",
+        "Bitwise Operations"
+      ],
+      "img" : ""
+    },
+    {
+      "skill": "C#",
+      "points": [
+        "Model View Controller(MVC) Application Design",
+        "Integration with web services and databases",
+        "Asynchronous design pattern",
+        "Real time web communications",
+        "Unit testing"
+      ],
+      "img" : ""
+    },
+    {
+      "skill": "Android Development",
+      "points": [
+        "Http Requests",
+        "Launching Local Notifications",
+        "Interpreting GPS Location"
+      ],
+      "img": ""
+    },
+
+    {
+      "skill": "AngularJS",
+      "points": [
+        "Integration with external web APIs",
+        "Building custom directives",
+        "Efficient workflow with Yeoman, Bower, and Grunt/Gulp",
+        "<a href='https://www.student.cs.uwaterloo.ca/~kgpenney/moltin-test/'>Tech Store Demo</a>"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "Java",
+      "points": [
+        "Graphical UIs using Swing and AWT",
+        "File I/O",
+        "Encryption algorithmns"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "HTML/CSS",
+      "points": [
+        "Experience building web applications and websites",
+        "Responsive design (try resizing your browser)",
+        "UI/UX design"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "jQuery",
+      "points": [
+        "Using AJAX to build dynamic UI's",
+        "Integration with web APIs and servers",
+        "Parsing JSON data"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "C",
+      "points": [
+        "Working with pointers, passing by reference",
+        "User interaction",
+        "Imperative Programming"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "PHP",
+      "points": [
+        "Generating and Sending Emails",
+        "Authenticating User Input",
+        "Processing Form Data",
+        "Dynamically Inserting HTML"
+      ],
+      "img": ""
+    },
+    {
+      "skill": "Python",
+      "points": [
+        "File Manipulation",
+        "Responding to HTTP Requests",
+        "Formatting JSON Data"
+      ],
+      "img": ""
+    }
+  ],
+  "WorkExperience" : [
+  {
+    "title": "Software Developer",
+    "time" : "Jan - May 2015",
+    "logo" : "images/crawford_logo.jpg",
+    "skills" : [
+      "Built a new Internal IT Ticketing Application to be used across Canada",
+      "Created a new database to house application data",
+      "Worked with business leaders to ensure application would exceed expectations"
+    ],
+    "id": "Crawford"
+  },
+  {
+    "title": "Administrative Assistant",
+    "time": "May - July 2014",
+    "logo": "images/ccs_logo.jpg",
+    "skills" : [
+      "Created maps, team captain materials, and slideshows for two Relay for Life’s",
+      "Filed tax receipts for donors",
+      "Ensured proper inventory after all events",
+      "Attended events to accept donations and raised community awareness"
+    ],
+    "id": "CCS"
+    },
+  {
+    "title": "Crew Trainer",
+    "time": "June 2011 - Present",
+    "logo": "images/mcd-logo.png",
+    "skills": [
+      "Trained new employees to ensure understanding of safety and quality standards",
+      "Regularly responsible for opening the restaurant",
+      "Lead managerial and production staff in successful launch of the McLobster"
+    ],
+    "id": "McDonalds"
+      }
+  ]
+}
