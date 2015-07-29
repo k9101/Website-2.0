@@ -1,6 +1,9 @@
 $(document).ready(function(){
 
   var jumboHeight = $('#jumboContainer').outerHeight();
+  var jSkills;
+  var jWork;
+  var jEdu;
 
 function daysInMonth(month,year) {
     return new Date(year, month, 0).getDate();
@@ -71,53 +74,89 @@ function generateWorkExperienceSmallMediaObject(imageURL, title, time, skills){
   return media;
 }
 
-//populate work experience media objects
+// //populate work experience media objects
+//   $.ajax({
+//     url: 'data/workExperience.json',
+//     type: "GET",
+//     success: function(data) {
+//
+//   //    var jData = JSON.parse(data);
+//
+//       $.each(data.WorkExperience, function(index, value){
+//         var media = generateWorkExperienceMediaObject(value.logo, value.title, value.time, value.skills, value.id);
+//
+//         $('.experienceContainer').append(media);
+//       });
+//
+//     }
+//   });
+//
+//
+// //populate education media objects
+//   $.ajax({
+//     url: 'data/education.json',
+//     type: 'GET',
+//     success: function(data){
+//
+//     //  var jData = JSON.parse(data);
+//
+//       $.each(data.Education, function(index, value){
+//
+//         var media = generateWorkExperienceMediaObject(value.logo, value.program, value.time, value.notes, "");
+//
+//         $('.educationContainer').append(media);
+//       });
+//     }
+//   });
+//
+//   $.ajax({
+//     url: 'data/skills.json',
+//     type: 'GET',
+//     success: function(data){
+//
+//       $.each(data.skills, function(index, value){
+//
+//         var media = generateWorkExperienceSmallMediaObject(value.img, value.skill, "", value.points);
+//
+//         $('.skillsContainer').append(media);
+//       });
+//     }
+//   });
+
   $.ajax({
-    url: 'data/workExperience.json',
-    type: "GET",
-    success: function(data) {
+      url: "data/data.json",
+      type: 'GET',
+      success: function(data){
 
-  //    var jData = JSON.parse(data);
+        // jSkills = data.skills;
+        // jWork = data.WorkExperience;
+        // jEdu = data.Education;
+        var jData = JSON.parse(data);
+        console.log(jData);
 
-      $.each(data.WorkExperience, function(index, value){
-        var media = generateWorkExperienceMediaObject(value.logo, value.title, value.time, value.skills, value.id);
+        $.each(jData.WorkExperience, function(index, value){
+          var media = generateWorkExperienceMediaObject(value.logo, value.title, value.time, value.skills, value.id);
 
-        $('.experienceContainer').append(media);
-      });
+          $('.experienceContainer').append(media);
+        });
 
-    }
-  });
+        $.each(jData.Education, function(index, value){
 
+          var media = generateWorkExperienceMediaObject(value.logo, value.program, value.time, value.notes, "");
 
-//populate education media objects
-  $.ajax({
-    url: 'data/education.json',
-    type: 'GET',
-    success: function(data){
+          $('.educationContainer').append(media);
+        });
 
-    //  var jData = JSON.parse(data);
+        $.each(jData.skills, function(index, value){
 
-      $.each(data.Education, function(index, value){
+          var media = generateWorkExperienceSmallMediaObject(value.img, value.skill, "", value.points);
 
-        var media = generateWorkExperienceMediaObject(value.logo, value.program, value.time, value.notes, "");
+          $('.skillsContainer').append(media);
+        });
+      },
+      error: function(error){
 
-        $('.educationContainer').append(media);
-      });
-    }
-  });
-
-  $.ajax({
-    url: 'data/skills.json',
-    type: 'GET',
-    success: function(data){
-
-      $.each(data.skills, function(index, value){
-
-        var media = generateWorkExperienceSmallMediaObject(value.img, value.skill, "", value.points);
-
-        $('.skillsContainer').append(media);
-      });
-    }
+      }
   });
 
   //smooth scrolling to element
