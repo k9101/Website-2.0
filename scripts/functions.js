@@ -118,10 +118,11 @@ $(document).ready(function(){
 //animate the scroll bar, when it is visible
   $(window).scroll(function(){
     var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
-    var namePercent = ($('#jumbo').offset().top/$(document).height()) * 100;
-    var diff = scrollPercent - namePercent;//Math.abs(namePercent - scrollPercent);
-    console.log(diff);
-    if(diff >= 6){ //header should be white
+    var gitPercent = ($('#git').offset().top/$(document).height()) * 100;
+    var namePercent = ($('#jumbo h1').offset().top/$(document).height()) * 100;
+    var diff = namePercent - gitPercent;//Math.abs(namePercent - scrollPercent);
+  //  console.log(diff);
+    if(diff <= 2){ //header should be white
       $('nav').addClass('nav-is-white');
     }else { //header stays black
       $('nav').removeClass('nav-is-white');
