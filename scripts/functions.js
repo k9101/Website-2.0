@@ -114,17 +114,29 @@ $(document).ready(function(){
      }
    });
 
+   var progressBarRan = false;
 //animate the scroll bar, when it is visible
   $(window).scroll(function(){
-
     var scrollPercent = ($(window).scrollTop() / $(document).height()) * 100;
-    var barPercent = ($('#bar').offset().top/$(document).height()) * 100;
-    var difference = barPercent - scrollPercent;
+    var namePercent = ($('#jumbo').offset().top/$(document).height()) * 100;
+    var diff = scrollPercent - namePercent;//Math.abs(namePercent - scrollPercent);
+    console.log(diff);
+    if(diff >= 6){ //header should be white
+      $('nav').addClass('nav-is-white');
+    }else { //header stays black
+      $('nav').removeClass('nav-is-white');
+    }
 
-    if(difference < 28){//run once
-      degreeProgress();
+    if(!progressBarRan){
 
-      $(window).unbind('scroll');
+      var barPercent = ($('#bar').offset().top/$(document).height()) * 100;
+      var difference = barPercent - scrollPercent;
+
+      if(difference < 28){//run once
+        degreeProgress();
+        progressBarRan = true;
+      //  $(window).unbind('scroll');
+      }
     }
   });
 });
