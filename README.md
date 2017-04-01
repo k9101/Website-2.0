@@ -1,5 +1,5 @@
 # Website-2.0
-The second version of Kris' website, a demo of this version may be found <a href="http://k9101.github.io/Website-2.0/">here</a>. This version was live from June - December 2015, before being replaced by <a href="http://krispenney.me">version 2.5</a> in early 2016.
+The second version of Kris' website, a demo of this version may be found [here](http://krispenney.me/website-2.0). This version was live from June - December 2015, before being replaced by <a href="http://krispenney.me">version 2.5</a> in early 2016.
 
 This version includes many new improvements over my previous website including:
   * An all new design!
